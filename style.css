@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  max-width: 992px;
+  min-height: 992px;
+  background: #07200f;
+  background: -webkit-linear-gradient(top left, #07200f, #242238);
+  background: -moz-linear-gradient(top left, #07200f, #242238);
+  background: linear-gradient(to bottom right, #07200f, #242238);
+  color: #fff;
+}
+
+img {
+  background-image: url('img/bg_numeros.png');
+  background-repeat: no-repeat;
+  background-size: 670px;
+  margin: auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.text-input .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.text-input h3 {
+  padding: 10px 0;
+}
+
+#outDica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #99ff8f;
+}
+.input {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+input {
+  flex-direction: row;
+  background-color: #fff;
+  caret-color: #699bf6;
+  outline-color: #1900ff;
+  color: #1900ff;
+  width: 100%;
+  padding: 0.3rem 0;
+  margin-left: 0.4rem;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+input:hover {
+  transition: 1s;
+  border-color: #1900ff;
+  background-color: lightgray;
+}
+
+#btApostar {
+  flex-direction: row;
+  background: #464c84;
+  color: #fff;
+  width: 100%;
+  padding: 0.3rem 0;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+#btApostar:hover {
+  transition: 1s;
+  background: -webkit-linear-gradient(top left, #464c84, #9b9da4);
+  background: -moz-linear-gradient(top left, #464c84, #9b9da4);
+  background: linear-gradient(to bottom right, #464c84, #9b9da4);
+}
+
+#btJogar {
+  flex-direction: row;
+  background-color: #1c6348;
+  color: #fff;
+  width: 100%;
+  padding: 0.3rem 0.3rem;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+#btJogar:hover {
+  transition: 1s;
+  background: -webkit-linear-gradient(top left, #1d6449, #a27ecb);
+  background: -moz-linear-gradient(top left, #1d6449, #a27ecb);
+  background: linear-gradient(to bottom right, #1d6449, #a27ecb);
+}
+
+pre {
+  font-size: 1.2em;
+}
+
+.fonteAzul {
+  color: blue;
+}
+.oculta {
+  display: none;
+}
+.exibe {
+  display: inline;
+}
+.italico {
+  font-style: italic;
+}
