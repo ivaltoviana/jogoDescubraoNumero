@@ -1,51 +1,56 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
-  max-width: 992px;
-  min-height: 992px;
-  background: #07200f;
-  background: -webkit-linear-gradient(top left, #07200f, #242238);
-  background: -moz-linear-gradient(top left, #07200f, #242238);
-  background: linear-gradient(to bottom right, #07200f, #242238);
-  color: #fff;
+  background: #10692c1e;
+  background-image: url('img/bg_numeros.png');
+
+  background-position: 5rem 0 5rem 0;
+  background-repeat: no-repeat;
+  background-position: center 3.5rem;
 }
 
-img {
-  background-image: url('img/bg_numeros.png');
-  background-repeat: no-repeat;
-  background-size: 670px;
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
+  color: #1d6449;
 }
 
 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  font-size: 2.5em;
 }
 
 .text-input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  padding-bottom: 3px;
-}
-
-.text-input .input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0;
+  padding-top: 2rem;
 }
 
 .text-input h3 {
-  padding: 10px 0;
+  padding: 1rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #699bf6;
+  width: 80%;
+  height: 100%;
+  border-radius: 2px;
+  margin: auto;
+  color: #99ff8f;
+}
+.box:hover {
+  opacity: 0.9;
 }
 
 #outDica {
@@ -55,8 +60,9 @@ h1 {
   margin: auto;
   color: #99ff8f;
 }
+
 .input {
-  color: #fff;
+  color: #1900ff;
   font-size: 1.2rem;
 }
 
@@ -66,7 +72,6 @@ input {
   caret-color: #699bf6;
   outline-color: #1900ff;
   color: #1900ff;
-  width: 100%;
   padding: 0.3rem 0;
   margin-left: 0.4rem;
   border: 1px solid lightgray;
@@ -78,11 +83,31 @@ input:hover {
   background-color: lightgray;
 }
 
+.number {
+  padding-bottom: 2rem;
+  color: #1900ff;
+  font-family: cursive;
+  font-size: 1.6rem;
+}
+
+.container-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inNumero {
+  width: 9rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 #btApostar {
   flex-direction: row;
   background: #464c84;
   color: #fff;
-  width: 100%;
+  width: 7rem;
   padding: 0.3rem 0;
   border: 1px solid lightgray;
   border-radius: 2px;
@@ -91,6 +116,7 @@ input:hover {
 }
 #btApostar:hover {
   transition: 1s;
+  border: 2px solid #464c8456;
   background: -webkit-linear-gradient(top left, #464c84, #9b9da4);
   background: -moz-linear-gradient(top left, #464c84, #9b9da4);
   background: linear-gradient(to bottom right, #464c84, #9b9da4);
@@ -100,7 +126,7 @@ input:hover {
   flex-direction: row;
   background-color: #1c6348;
   color: #fff;
-  width: 100%;
+  width: 9rem;
   padding: 0.3rem 0.3rem;
   border: 1px solid lightgray;
   border-radius: 2px;
@@ -109,9 +135,23 @@ input:hover {
 }
 #btJogar:hover {
   transition: 1s;
+  border: 2px solid #464c8456;
   background: -webkit-linear-gradient(top left, #1d6449, #a27ecb);
   background: -moz-linear-gradient(top left, #1d6449, #a27ecb);
   background: linear-gradient(to bottom right, #1d6449, #a27ecb);
+}
+
+#outErros {
+  color: #fff;
+}
+
+#outChances {
+  color: #fff;
+}
+
+.dica {
+  color: #fff;
+  margin-left: 4px;
 }
 
 pre {
